@@ -1,0 +1,24 @@
+button {
+    width: 50%;
+    padding: 10px 3px;
+    color: white;
+
+    font-weight: bold;
+    font-size: medium;
+    border: unset;
+
+    border-radius: 4px;
+    margin-top: 6px;
+    background-color: #42b72a;
+    outline: unset;
+}
+/* .btn-login {
+    width: 100%;
+    background: #1876f2;
+}
+.btn-login:hover {
+    background: #1462c9;
+} */
+button:hover {
+    background-color: #3daa27;
+}
