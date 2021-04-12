@@ -1,0 +1,9 @@
+.register__select {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    font-size: 12px;
+}
+.register__select:focus {
+    outline: unset;
+}

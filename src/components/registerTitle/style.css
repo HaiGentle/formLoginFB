@@ -1,0 +1,11 @@
+.regis__title {
+    font-size: xx-large;
+    font-weight: 600;
+    margin: unset;
+}
+
+.regis__text {
+    margin: unset;
+    font-size: 12px;
+    color: gray;
+}

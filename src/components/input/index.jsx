@@ -1,8 +1,13 @@
 import './style.css'
 
 export default function InputComponent (props) {
-    const {handleOnChange, placeholder} = props;
+    const {placeholder, width, ...extProps} = props;
     return (
-        <input onChange={(e) => handleOnChange(e)} placeholder={placeholder} />
+        <input 
+            className="inpt"
+            placeholder={placeholder} 
+            style={{width}}
+            {...extProps}
+        />
     )
 }

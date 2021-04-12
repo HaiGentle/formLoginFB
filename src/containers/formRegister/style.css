@@ -1,0 +1,44 @@
+.form-register {
+    width: 432px;
+    margin: 100px auto;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+    padding: 16px 12px;
+    border-radius: 7px;
+    background-color: white;
+    height: fit-content;
+}
+.register__fullname {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register__birthday-title, .register__gender-title {
+    margin-bottom: unset;
+    font-size: 12px;
+}
+.register__birthday, .register__gender {
+    display: flex;
+    justify-content: space-between;
+}
+.register__male, .register__female, .register__other {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+
+    padding: 3px 7px;
+    border: 1px solid;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+}
+
+.register__male > span, .register__female > span, 
+.register__other > span {
+    padding: 3px 0;
+}
+
+.register__btn-submit {
+    width: 50%;
+    margin: auto;
+}

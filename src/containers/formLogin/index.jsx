@@ -14,33 +14,36 @@ export default function FormLoginContainer() {
         passwordRef.current = e.target.value;
     }
     const handleLogin = () => {
-        if(emailRef.current && passwordRef.current) {
-            alert("Login Successfully")
+        let mess = "";
+        if(!emailRef.current) {
+            mess = "Email is required";
+        } else if(!passwordRef.current) {
+            mess = "Password is required";
+        } else {
+            mess = "Login successfully!"
         }
-        else {
-            alert("email required")
-        }
+        alert(mess);
     }
 
     return (
         <div className="form-login">
             <InputComponent 
                 placeholder="Email hoặc số điện thoại"
-                handleOnChange={handleOnChangeEmail}
+                onChange={handleOnChangeEmail}
             />
             <InputComponent 
                 placeholder="Mật khẩu"
-                handleOnChange={handleOnChangePassword}
+                onChange={handleOnChangePassword}
             />
             <ButtonComponent 
                 title="Đăng nhập" 
                 color="#1877f2" 
-                width={100}
+                width="100%"
                 onClick={handleLogin}
             />
-            <p>Quên mật khẩu?</p>
+            <p className="p-remmember-pass">Quên mật khẩu?</p>
             <hr/>
-            <ButtonComponent title="Tạo tài khoản mới" color="#42b72a" width={50} />
+            <ButtonComponent title="Tạo tài khoản mới" color="#42b72a" width="50%" />
         </div>
     )
 }
